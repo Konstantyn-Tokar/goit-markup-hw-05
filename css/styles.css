@@ -163,7 +163,19 @@ img{
 }
 
 .chosen {
+    position: relative;
     color: var(--accent-color);
+}
+
+.chosen::after {
+    position: absolute;
+    display: block;
+    margin-top: 29px;
+    content:'';
+    width: 100%;
+    background: var(--accent-color);
+    border-radius: 2px;
+    height: 4px;
 }
 
 .tel-link {
@@ -725,3 +737,63 @@ color: var(--color-aссent);
 
 /* =============== END PARTFOLIO RROJECT =============== */
 
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 528px;
+    height: 580px;
+    background: var(--color-text-light-fon);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.icon-modal-close {
+    transition: fill 250ms var(--timing);
+}
+
+.modal-close-button{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--color-text-light-fon);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    transition: background-color 250ms var(--timing);
+    cursor: pointer;
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+  background-color: var(--color-pointed-btn);
+}
+
+.modal-close-button:hover .icon-modal-close,
+.modal-close-button:focus .icon-modal-close {
+    fill: var(--color-text-light-fon);
+}
+
+.backdrop {
+    transition:opacity 250ms var(--timing),
+    visibility 250ms var(--timing),
+    pointer-events 250ms var(--timing);
+}   
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+}
