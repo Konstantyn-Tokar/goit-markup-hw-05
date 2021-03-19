@@ -777,7 +777,7 @@ color: var(--color-aссent);
 
 .modal-close-button:hover,
 .modal-close-button:focus {
-  background-color: var(--color-pointed-btn);
+  background-color: var(--color-text-dark-fon);
 }
 
 .modal-close-button:hover .icon-modal-close,
@@ -795,5 +795,4 @@ color: var(--color-aссent);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-
 }
