@@ -152,7 +152,7 @@ img{
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--color-text);
-    transition: color var(--timing);
+    transition: color 250ms var(--timing);
 
 
 }
@@ -218,7 +218,6 @@ img{
 .icon-header {
     margin-right: 10px;
     fill: currentColor;
-
 }
 
  /* =============== END HEADER =============== */
@@ -355,11 +354,11 @@ img{
     position: absolute;
     width: 100%;
     bottom: 0;
-    padding: 27px 0;
     background: rgba(47, 48, 58, 0.8);
 }
 
 .subtitel-caption{
+    margin: 27px 0px;
     font-family: var(--main-font);
     font-weight: 700;
     font-size: 14px;
@@ -487,7 +486,7 @@ img{
 }
 
 .clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
+.lients-link:focus .clients-icon {
   fill: var(--accent-color)
 }
 
@@ -747,7 +746,7 @@ color: var(--color-aссent);
     height: 580px;
     background: var(--color-text-light-fon);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
+    border-radius: var(--radius);
 }
 
 .icon-modal-close {
