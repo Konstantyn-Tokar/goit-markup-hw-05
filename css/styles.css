@@ -684,7 +684,8 @@ img{
 .des-project-images {
     padding: 20px 24px;
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    border:1px solid #EEEEEE;
+    border-top: none;
     box-sizing: border-box;
 }
 
