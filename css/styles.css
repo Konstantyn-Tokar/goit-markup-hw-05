@@ -435,7 +435,7 @@ img{
     background-color: var(--color-text-light-fon);
     transition: 
     background-color 250ms var(--timing),
-    color 5000ms var(--timing);
+    color 250ms var(--timing);
 }
 
 .team-link-icon:hover,
