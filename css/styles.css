@@ -573,13 +573,13 @@ img{
 }
 
 .footer-text {
+    display: block;
     font-family:var(--main-font);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color:var(--color-text-light-fon);
 }
 
@@ -587,6 +587,54 @@ img{
     width:44px;
     height: 44px;
     border-radius: 50%;
+}
+
+.footer-form-subscription {
+    margin-left: 92px;
+}
+
+.footer-input {
+    margin-right: 12px;
+    margin-top: 20px;
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: #2f303a;
+    padding: 15px 16px;
+    color: var(--color-text-light-fonr);
+}
+
+  .button-subscribe { 
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 10px 29px;
+    border-radius: 4px;
+    min-width: 200px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--color-text-light-fon);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    font-family: inherit;
+    transition: background-color 250ms var(--timing),
+      box-shadow 250ms var(--timing);
+}
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+  background-color: var(--color-pointed-btn);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.footer-button-icon {
+    fill: currentColor;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
 }
 
 
